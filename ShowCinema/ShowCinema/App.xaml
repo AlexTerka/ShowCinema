@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:ShowCinema"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="BlackColor" Color="#303030"/>
+        <SolidColorBrush x:Key="WhiteColor" Color="#ffffff"/>
+        <SolidColorBrush x:Key="BlueColor" Color="#22cccc"/>
     </Application.Resources>
 </Application>

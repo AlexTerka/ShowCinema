@@ -5,10 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ShowCinema"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Authorization">
+      d:DesignHeight="700" d:DesignWidth="1400"
+      Title="Авторизация">
 
     <Grid>
-        
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{StaticResource WhiteColor}" Margin="50">
+            <TextBlock Text="E-mail" Width="110" HorizontalAlignment="Left" Margin="10 10 10 5"></TextBlock>
+            <TextBox Name="TbxLogin" Width="200" Margin="10 5 10 5" HorizontalAlignment="Left"></TextBox>
+            <TextBlock Text="Пароль" Width="auto" HorizontalAlignment="Left" Margin="10 5 10 5"></TextBlock>
+            <PasswordBox HorizontalAlignment="Left" Width="200" Name="TbxPass" Margin="10 5 0 5"></PasswordBox>
+            <Button Name="BtnLogin" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="10" Height="48" BorderThickness="0" Background="{StaticResource BlueColor}" Width="200">
+                <TextBlock Text="Войти" Foreground="{StaticResource WhiteColor}" FontWeight="Medium"></TextBlock>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>
