@@ -15,14 +15,27 @@ using System.Windows.Shapes;
 
 namespace ShowCinema
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            AppData.MainFrame = FrmMain;
+        }
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            AppData.MainFrame.Navigate(new Authorization());
+        }
+
+        private void BtnSignUp_Click(object sender, RoutedEventArgs e)
+        {
+            AppData.MainFrame.Navigate(new Registration());
+        }
+
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            AppData.MainFrame.GoBack();
         }
     }
 }

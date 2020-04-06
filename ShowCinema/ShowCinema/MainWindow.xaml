@@ -18,14 +18,14 @@
         <Frame Grid.Row="1" Name="FrmMain" NavigationUIVisibility="Hidden" BorderThickness="0" Background="{StaticResource WhiteColor}"></Frame>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button  Margin="0 0 50 0" Width="120" Background="{StaticResource BlueColor}"  BorderThickness="0" Name="BtnLogin">
+            <Button  Click="BtnLogin_Click" Margin="0 0 50 0" Width="120" Background="{StaticResource BlueColor}"  BorderThickness="0" Name="BtnLogin">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Sign in" HorizontalAlignment="Center" Margin="0 0 10 0" FontSize="18" Foreground="{StaticResource WhiteColor}"/>
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" HorizontalAlignment="Center" FontSize="24" Foreground="{StaticResource WhiteColor}"/>
                 </StackPanel>
             </Button>
 
-            <Button  Margin="0 0 50 0" Width="120" Background="{StaticResource BlueColor}"  BorderThickness="0" Name="BtnSignUp">
+            <Button Click="BtnSignUp_Click" Margin="0 0 50 0" Width="120" Background="{StaticResource BlueColor}"  BorderThickness="0" Name="BtnSignUp">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Sign up" HorizontalAlignment="Center" Margin="0 0 10 0" FontSize="18" Foreground="{StaticResource WhiteColor}"/>
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8FA;" HorizontalAlignment="Center" FontSize="24" Foreground="{StaticResource WhiteColor}"/>
@@ -34,7 +34,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
-            <Button  Width="120" Background="{StaticResource BlueColor}"  BorderThickness="0" Name="BtnCancel">
+            <Button  Click="BtnCancel_Click" Width="120" Background="{StaticResource BlueColor}"  BorderThickness="0" Name="BtnCancel">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" HorizontalAlignment="Center" FontSize="24" Foreground="{StaticResource WhiteColor}"/>
                     <TextBlock Text="Назад" HorizontalAlignment="Center" Margin="10 0 0 0" FontSize="18" Foreground="{StaticResource WhiteColor}"/>
